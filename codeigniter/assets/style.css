@@ -1,0 +1,112 @@
+section.list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+	grid-auto-rows: minmax(100px, auto);
+	gap:calc(2em + 2vh) calc(1.5em + 1vmin);
+}
+
+section.list article header{
+	text-align:center;
+}
+section.list article{
+	text-align : center;
+}
+section.list img {
+	display:inline-block;
+
+}
+.short-text {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-align:center;
+	margin-top : 5px;
+	border-bottom: none;
+}
+
+.overview {
+	color : #fff;
+}
+
+.case{
+	display: flex;
+  align-items: flex-start; 
+  gap: 1rem;  
+}
+
+.case img {
+	max-width: 200px;
+	height: auto;
+	flex-shrink: 0;
+  }
+  
+.case .overview {
+	margin-top : 40px;
+	flex: 1;
+}
+
+
+.season-card {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	margin: 10px;
+	padding: 10px;
+	width: 150px;
+	text-align: center;
+	background: #fff;
+	transition: transform .2s;
+  }
+ 
+.season-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+  
+
+.season-card img {
+	width: 100%;
+	border-radius: 4px;
+	margin-bottom: 8px;
+  }
+  .season-card a {
+	display: block;
+	font-weight: bold;
+	color: #333;
+	text-decoration: none;
+	margin-top: 4px;
+  }
+  .season-card a:hover {
+	color: #007bff;
+  }
+  
+
+ul {
+	display: flex;               
+	flex-direction: row;         
+	flex-wrap: wrap;             
+	gap: 1rem;                   
+	list-style: none;            
+	margin: 0;                  
+	padding: 0;                 
+  }
+  
+
+  section.list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: calc(2em + 2vh) calc(1.5em + 1vmin);
+  }
+  
+  .season-list,
+section.list {
+  list-style: none;  
+  margin: 0;         
+  padding: 0;        
+}
+
+.season-list li,
+section.list li {
+  list-style: none;  
+}
